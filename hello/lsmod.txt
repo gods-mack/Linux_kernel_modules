@@ -1,0 +1,138 @@
+Module                  Size  Used by
+helloM                 16384  0
+cmac                   16384  1
+btrfs                1232896  0
+xor                    24576  1 btrfs
+zstd_compress         163840  1 btrfs
+raid6_pq              114688  1 btrfs
+ufs                    81920  0
+qnx4                   16384  0
+hfsplus               110592  0
+hfs                    61440  0
+minix                  36864  0
+ntfs                  106496  0
+msdos                  20480  0
+jfs                   192512  0
+xfs                  1277952  0
+cpuid                  16384  0
+rfcomm                 81920  16
+ccm                    20480  6
+xt_conntrack           16384  1
+xt_tcpudp              20480  1
+bnep                   24576  2
+iptable_filter         16384  1
+xt_nat                 16384  1
+iptable_nat            16384  1
+nf_nat                 40960  2 xt_nat,iptable_nat
+nf_conntrack          139264  3 xt_conntrack,nf_nat,xt_nat
+nf_defrag_ipv6         24576  1 nf_conntrack
+nf_defrag_ipv4         16384  1 nf_conntrack
+libcrc32c              16384  4 nf_conntrack,nf_nat,btrfs,xfs
+bpfilter               24576  0
+vboxnetadp             28672  0
+vboxnetflt             28672  0
+vboxdrv               483328  2 vboxnetadp,vboxnetflt
+intel_rapl_msr         20480  0
+mei_hdcp               24576  0
+joydev                 28672  0
+uvcvideo               94208  0
+btusb                  57344  0
+videobuf2_vmalloc      20480  1 uvcvideo
+videobuf2_memops       20480  1 videobuf2_vmalloc
+btrtl                  20480  1 btusb
+btbcm                  16384  1 btusb
+videobuf2_v4l2         24576  1 uvcvideo
+videobuf2_common       53248  2 videobuf2_v4l2,uvcvideo
+videodev              217088  3 videobuf2_v4l2,uvcvideo,videobuf2_common
+btintel                24576  1 btusb
+mc                     53248  4 videodev,videobuf2_v4l2,uvcvideo,videobuf2_common
+bluetooth             573440  51 btrtl,btintel,btbcm,bnep,btusb,rfcomm
+ecdh_generic           16384  2 bluetooth
+ecc                    32768  1 ecdh_generic
+intel_rapl_common      24576  1 intel_rapl_msr
+x86_pkg_temp_thermal    20480  0
+intel_powerclamp       20480  0
+coretemp               20480  0
+snd_hda_codec_hdmi     61440  1
+snd_hda_codec_generic    81920  1
+crct10dif_pclmul       16384  1
+crc32_pclmul           16384  0
+ledtrig_audio          16384  1 snd_hda_codec_generic
+ghash_clmulni_intel    16384  0
+aesni_intel           372736  5
+rtl8821ae             233472  0
+acpi_pad              184320  0
+input_leds             16384  0
+serio_raw              20480  0
+crypto_simd            16384  1 aesni_intel
+cryptd                 24576  2 crypto_simd,ghash_clmulni_intel
+btcoexist             147456  1 rtl8821ae
+glue_helper            16384  1 aesni_intel
+rtl_pci                28672  1 rtl8821ae
+rapl                   20480  0
+nouveau              1896448  1
+rtlwifi                90112  3 rtl_pci,rtl8821ae,btcoexist
+mac80211              851968  3 rtl_pci,rtl8821ae,rtlwifi
+intel_cstate           20480  0
+snd_hda_intel          49152  6
+snd_intel_dspcfg       24576  1 snd_hda_intel
+mxm_wmi                16384  1 nouveau
+intel_wmi_thunderbolt    20480  0
+snd_hda_codec         131072  3 snd_hda_codec_generic,snd_hda_codec_hdmi,snd_hda_intel
+ttm                   102400  1 nouveau
+cfg80211              712704  2 rtlwifi,mac80211
+snd_hda_core           90112  4 snd_hda_codec_generic,snd_hda_codec_hdmi,snd_hda_intel,snd_hda_codec
+snd_hwdep              20480  1 snd_hda_codec
+snd_pcm               102400  4 snd_hda_codec_hdmi,snd_hda_intel,snd_hda_codec,snd_hda_core
+wmi_bmof               16384  0
+libarc4                16384  1 mac80211
+snd_seq_midi           20480  0
+snd_seq_midi_event     16384  1 snd_seq_midi
+snd_rawmidi            36864  1 snd_seq_midi
+i915                 1978368  26
+snd_seq                69632  2 snd_seq_midi,snd_seq_midi_event
+mei_me                 40960  1
+intel_xhci_usb_role_switch    16384  0
+snd_seq_device         16384  3 snd_seq,snd_seq_midi,snd_rawmidi
+roles                  16384  1 intel_xhci_usb_role_switch
+elan_i2c               40960  0
+snd_timer              36864  2 snd_seq,snd_pcm
+mac_hid                16384  0
+drm_kms_helper        184320  2 i915,nouveau
+drm                   491520  21 drm_kms_helper,i915,ttm,nouveau
+snd                    86016  22 snd_hda_codec_generic,snd_seq,snd_seq_device,snd_hda_codec_hdmi,snd_hwdep,snd_hda_intel,snd_hda_codec,snd_timer,snd_pcm,snd_rawmidi
+mei                   102400  3 mei_hdcp,mei_me
+ideapad_laptop         20480  0
+sparse_keymap          16384  1 ideapad_laptop
+i2c_algo_bit           16384  2 i915,nouveau
+fb_sys_fops            16384  1 drm_kms_helper
+syscopyarea            16384  1 drm_kms_helper
+intel_lpss_pci         20480  0
+intel_lpss             16384  1 intel_lpss_pci
+sysfillrect            16384  1 drm_kms_helper
+idma64                 20480  0
+sysimgblt              16384  1 drm_kms_helper
+intel_pch_thermal      16384  0
+soundcore              16384  1 snd
+virt_dma               20480  1 idma64
+kvm_intel             253952  0
+kvm                   655360  1 kvm_intel
+binfmt_misc            24576  1
+sch_fq_codel           20480  6
+parport_pc             40960  0
+ppdev                  24576  0
+lp                     20480  0
+parport                53248  3 parport_pc,lp,ppdev
+ip_tables              32768  2 iptable_filter,iptable_nat
+x_tables               40960  5 xt_conntrack,iptable_filter,xt_tcpudp,xt_nat,ip_tables
+autofs4                45056  2
+ahci                   40960  1
+r8169                  90112  0
+realtek                24576  1
+libahci                32768  1 ahci
+i2c_hid                28672  0
+hid                   126976  1 i2c_hid
+wmi                    32768  5 intel_wmi_thunderbolt,wmi_bmof,ideapad_laptop,mxm_wmi,nouveau
+pinctrl_sunrisepoint    28672  0
+video                  49152  3 ideapad_laptop,i915,nouveau
+pinctrl_intel          28672  1 pinctrl_sunrisepoint
