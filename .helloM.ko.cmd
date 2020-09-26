@@ -1,1 +1,0 @@
-cmd_/home/manish/workspace/kernel-development/LinuxModules/helloM.ko := ld -r -m elf_x86_64  -z max-page-size=0x200000  --build-id  -T ./scripts/module-common.lds -o /home/manish/workspace/kernel-development/LinuxModules/helloM.ko /home/manish/workspace/kernel-development/LinuxModules/helloM.o /home/manish/workspace/kernel-development/LinuxModules/helloM.mod.o;  true
