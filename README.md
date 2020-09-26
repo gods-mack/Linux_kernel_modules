@@ -18,7 +18,7 @@ to remove or unloading module ```sudo rmmod module_name```
 
 - insmod stands for "insert_module"
 
-- lsmod command will list the current modules loaded in kernel
+- ```lsmod``` command will list the current modules loaded in kernel
 
 - rmmod utility command will unload the loadable module. e.g ```rmmod helloM```
 
@@ -26,5 +26,5 @@ to remove or unloading module ```sudo rmmod module_name```
   
 
 
-- modprobe is also a kernel utility which helps to load kernel module into kernel code.
+- ```modprobe``` is also a kernel utility which helps to load kernel module into kernel code.
 
