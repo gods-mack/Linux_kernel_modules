@@ -1,4 +1,6 @@
 
+/* Kernel Linked-list API */ 
+
 #include<linux/module.h>
 #include<linux/kernel.h>
 #include<linux/list.h>     // linked-list kernel API
