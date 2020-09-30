@@ -28,3 +28,5 @@ to remove or unloading module ```sudo rmmod module_name```
 
 - ```modprobe``` is also a kernel utility which helps to load kernel module into kernel code.
 
+
+[kernel API](https://linux-kernel-labs.github.io/refs/heads/master/labs/kernel_api.html)
