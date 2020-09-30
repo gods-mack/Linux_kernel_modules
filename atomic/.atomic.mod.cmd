@@ -1,0 +1,1 @@
+cmd_/home/manish/workspace/kernel-development/LinuxModules/atomic/atomic.mod := { echo  /home/manish/workspace/kernel-development/LinuxModules/atomic/atomic.o; echo; } > /home/manish/workspace/kernel-development/LinuxModules/atomic/atomic.mod
