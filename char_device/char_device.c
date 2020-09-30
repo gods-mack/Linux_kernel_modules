@@ -65,5 +65,9 @@ MODULE_AUTHOR("Manish");
 MODULE_LICENSE("GPL");
 MODULE_DESCRIPTION("my first char device dvr");
 
+// to add device "sudo mknod /dev/mydevice_dvr c 230 0"
+// 230 major number
+// 0 minor number
+
 
 
